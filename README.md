@@ -107,8 +107,11 @@ TextMining-ML-Analysis-Star-Wars/
 ├── requirements.txt             # Python dependencies
 │
 ├── data/
-│   ├── raw/                     # Original script files (if available)
-│   └── processed/               # Processed script files
+│   ├── raw/
+│   ├   ├── star-wars-episode-iv-a-new-hope-1977.docx   # raw script files
+│   ├   ├── star-wars-episode-vi-return-of-the-jedi-1983.docx
+│   ├   └──star-wars-episode-v-the-empire-strikes-back-1980.docx                  
+│   └── processed/                  # Processed script files
 │       ├── new_hope.txt
 │       ├── empire_strikes_back.txt
 │       └── return_of_the_jedi.txt
@@ -132,41 +135,6 @@ TextMining-ML-Analysis-Star-Wars/
 │
 └── output/                       # Generated outputs (plots, visualizations)
 ```
-
----
-
-## Installation
-
-1. **Clone the repository:**
-   ```bash
-   git clone <repository-url>
-   cd TextMining-ML-Analysis-Star-Wars
-   ```
-
-2. **Create a virtual environment (recommended):**
-   ```bash
-   python -m venv venv
-   
-   # On Windows:
-   venv\Scripts\activate
-   
-   # On Linux/Mac:
-   source venv/bin/activate
-   ```
-
-3. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Download spaCy English model (optional, for word embeddings):**
-   ```bash
-   python -m spacy download en_core_web_sm
-   ```
-
-5. **Ensure data files are present:**
-   - The script files should be in `data/processed/` directory
-   - Files: `new_hope.txt`, `empire_strikes_back.txt`, `return_of_the_jedi.txt`
 
 ---
 
